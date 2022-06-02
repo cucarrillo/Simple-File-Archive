@@ -1,0 +1,5 @@
+The format is simply:
+<folder_name>	<folder_path>
+
+For example:
+counter-strike		C:\Program Files (x86)\Steam\userdata\345211964\730\local\cfg\
