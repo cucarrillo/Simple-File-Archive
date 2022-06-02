@@ -16,6 +16,7 @@ import sys
 import shutil
 import re
 import datetime
+import time
 
 SAVE_FOLDER_PATH    = "save";
 PATHS_FILE_PATH     = "paths";
@@ -75,6 +76,12 @@ def main():
 
     arguments = sys.argv[1:];
 
+    # For double clicking .sfa files meant for windows users
+    if(len(arguments) > 0):
+        if(".sfa" in arguments[0]):
+            filepath = arguments[0];
+            arguments = [];
+            
     i = 0;
 
     while(i < len(arguments)):
