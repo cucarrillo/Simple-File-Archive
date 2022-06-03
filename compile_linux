@@ -1,0 +1,4 @@
+#!/bin/bash
+pyinstaller main.py --onefile --name "SFA" --icon="resources/icon2.ico" --clean --noconfirm --distpath bin
+rm -r -f SFA.spec
+rm -r -f build
